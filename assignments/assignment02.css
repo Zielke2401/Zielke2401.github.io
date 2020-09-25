@@ -6,9 +6,21 @@ body {
   background-color: skyblue;
 }
 
-.igottabeme{ font-family: Arial, Helvetica, sans-serif; }
+#igottabeme{ font-family: Arial, Helvetica, sans-serif; }
 
+div{
+  margin-bottom: 50px; 
+}
 
+span {
+  height: 100px;
+  width: 50px;
+  padding: 5px 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  background-color: yellow;
+}
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
