@@ -30,6 +30,7 @@ span {
   background-color: yellow;
 }
 
+/* #7 */
 .a{
   
 }
@@ -42,6 +43,9 @@ span {
 .c{
   height: auto; 
 }
+
+/* #9 */
+#dog {position:relative; left: 50px; top: 150px;}
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
