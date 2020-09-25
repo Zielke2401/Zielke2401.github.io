@@ -2,16 +2,24 @@
 
 /* --- put your css here --- */ 
 
+
+/* #2 */
 body {
   background-color: skyblue;
 }
 
+/* #3 */
 #igottabeme{ font-family: Arial, Helvetica, sans-serif; }
 
+/* #4 */
+#classy{margin-left: 10px;}
+
+/* #5 */
 div{
   margin-bottom: 50px; 
 }
 
+/* #6 */
 span {
   height: 100px;
   width: 50px;
@@ -20,6 +28,19 @@ span {
   border-width: 5px;
   border-color: blue;
   background-color: yellow;
+}
+
+.a{
+  
+}
+
+.b{
+  position: relative;
+  display: block;
+}
+
+.c{
+  height: auto; 
 }
 
 /* --- pre-existing css --- */
