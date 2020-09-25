@@ -45,7 +45,8 @@ span {
 }
 
 /* #9 */
-#dog {position:relative; left: 50px; top: 150px;}
+#dog {position:relative; left: -50px; top: -150px;}
+
 
 /* --- pre-existing css --- */
 .stripey tr:nth-child(even) {
