@@ -1,6 +1,15 @@
 
 
 /* --- put your css here --- */ 
+nav{
+  display: block;
+  padding: 8px;
+  background-color: green;
+  font-size: 20px;
+  opacity: .9;  
+  position:sticky;
+  top: 0;
+}
 
 /* #2 */
 body {
@@ -52,6 +61,12 @@ img[alt="cat icon"]{
 
 /* #9 */
 img[alt="dog icon"] {position:relative; left: -50px; top: -150px;}
+
+div.notused{
+  background-color: orange;
+}
+
+
 
 
 /* --- pre-existing css --- */
