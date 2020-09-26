@@ -66,6 +66,8 @@ div.notused{
   background-color: orange;
 }
 
+img[alt="bird icon"] {position:relative; left: 50px; top: 250px;}
+
 
 
 
