@@ -1,6 +1,13 @@
 
 
 /* --- put your css here --- */ 
+ul{
+  display: block;
+  padding: 8px;
+  background-color: green;
+  font-size: 20px;
+  opacity: .9;  
+}
 
 
 /* #2 */
@@ -42,6 +49,13 @@ span {
 
 .c{
   height: auto; 
+}
+
+/* #8*/
+#cat{
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 /* #9 */
