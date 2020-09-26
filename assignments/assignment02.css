@@ -64,9 +64,10 @@ img[alt="dog icon"] {position:relative; left: -50px; top: -150px;}
 
 div.notused{
   background-color: orange;
+  position:relative; 
 }
 
-img[alt="bird icon"] {position:relative; left: 50px; top: 250px;}
+img[alt="bird icon"] {position:absolute; left: 50px; top: 250px;}
 
 
 
