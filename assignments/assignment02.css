@@ -1,14 +1,6 @@
 
 
 /* --- put your css here --- */ 
-ul{
-  display: block;
-  padding: 8px;
-  background-color: green;
-  font-size: 20px;
-  opacity: .9;  
-}
-
 
 /* #2 */
 body {
@@ -52,14 +44,14 @@ span {
 }
 
 /* #8*/
-#cat{
+img[alt="cat icon"]{
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
 /* #9 */
-#dog {position:relative; left: -50px; top: -150px;}
+img[alt="dog icon"] {position:relative; left: -50px; top: -150px;}
 
 
 /* --- pre-existing css --- */
