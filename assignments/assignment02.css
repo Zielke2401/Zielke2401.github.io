@@ -49,7 +49,7 @@ span {
 }
 
 .c{
-  height: auto; 
+  display: inline-block;
 }
 
 /* #8*/
@@ -62,12 +62,11 @@ img[alt="cat icon"]{
 /* #9 */
 img[alt="dog icon"] {position:relative; left: -50px; top: -150px;}
 
-div.notused{
+div[id = positionMe]{
   background-color: orange;
 }
 
-img[alt="bird icon"] {position:relative; left: 50px; top: 250px;}
-
+img[alt="bird icon"] {position:relative; left: 250px; top: 200px;}
 
 
 
