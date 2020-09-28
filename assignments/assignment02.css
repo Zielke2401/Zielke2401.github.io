@@ -1,6 +1,8 @@
 
 
 /* --- put your css here --- */ 
+/* extra credit - #11 */
+/* change the nav bar so it is always at the top and change the properties of the bar */
 nav{
   display: block;
   padding: 8px;
@@ -12,22 +14,27 @@ nav{
 }
 
 /* #2 */
+/* change the body color */
 body {
   background-color: skyblue;
 }
 
 /* #3 */
+/* change the font for this specific id */
 #igottabeme{ font-family: Arial, Helvetica, sans-serif; }
 
 /* #4 */
+/* change the margin for this speicific id */
 #classy{margin-left: 10px;}
 
 /* #5 */
+/* change the margin for all div */
 div{
   margin-bottom: 50px; 
 }
 
 /* #6 */
+/* change all the properties that are in common for all the spans */
 span {
   height: 100px;
   width: 50px;
@@ -39,10 +46,7 @@ span {
 }
 
 /* #7 */
-.a{
-  
-}
-
+/* change the positions and displays for the specific classes */
 .b{
   position: relative;
   display: block;
@@ -53,6 +57,7 @@ span {
 }
 
 /* #8*/
+/* change the position for the image */
 img[alt="cat icon"]{
   position: fixed;
   bottom: 0;
@@ -60,8 +65,12 @@ img[alt="cat icon"]{
 }
 
 /* #9 */
+/* change the position for the image */
 img[alt="dog icon"] {position:relative; left: -50px; top: -150px;}
 
+
+/* #10 */
+/* change the position for the image and change the color for the div with the specific id*/
 div[id = positionMe]{
   background-color: orange;
 }
