@@ -20,16 +20,16 @@ var totalPar = 72;
 var totalPoints = 0;
 var overTotal = 0;
 
-
-function add1 (elem, elem19) {
+function add1 (elem, elem19) 
+{
   
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "0";
     
     elem19.children[2].innerHTML = totalScore;
   else {
-    if (currentScore < 8){    
-        let currentScore = elem.children[2].innerHTML;
+    if (elem.children[2].innerHTML < "8"){    
+        let currentscore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
         totalScore = totalScore + 1;
@@ -38,24 +38,44 @@ function add1 (elem, elem19) {
   }
   
  //find the over  
-  if (Number.parseInt(elem.children[2].innerHTML)- Number.parseInt(elem.children[1].innerHTML) > 0){
-    elem.children[3].innerHTML = (Number.parseInt(elem.children[2].innerHTML)- Number.parseInt(elem.children[1].innerHTML);
-    overTotal = overTotal + (Number.parseInt(elem.children[2].innerHTML)- Number.parseInt(elem.children[1].innerHTML);                             
+  if ((elem.children[2].innerHTML)- (elem.children[1].innerHTML) > 0){
+    elem.children[3].innerHTML = (elem.children[2].innerHTML)- (elem.children[1].innerHTML);
+    overTotal = overTotal + (elem.children[2].innerHTML)- (elem.children[1].innerHTML);                             
     elem19.children[3].innerHTML = overtotal;
 }
 
+  function subtract1(elem, elem19)
+  {
+    if (elem.children[2].innerHTML > "0")
+    {
+      let currentScore = elem.children[2].innerHTML;
+        currentScore = Number.parseInt(currentScore);
+        elem.children[2].innerHTML = currentScore - 1;
+        totalScore = totalScore - 1;
+        elem19.children[2].innerHTML = totalScore; 
+      }
+    
+      if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML <= 8) {
+        let currentOver;
+        currentOver = elem.children[2].innerHTML - elem.children[1].innerHTML;
+        overTotal = overTotal - 1;
+        elem.children[3].innerHTML = currentOver;
+        elem19.children[3].innerHTML = overTotal;
+      }
+    
+    function clear(elem, elem19)
+    {
+      if (elem.children[2].innerHTML != "-")
+      {
+      elem19.children[2].innerHTML = totalScore - elem.children[2].innerHTML;
+      }
+      
+      if(elem.children[3].innerHTML != "-")
+      {
+      elem19.children[3].innerHTML = overTotal - elem.children[3].innerHTML;
+      }
+      
+      elem.children[2].innerHTML = "-";
+      elem.children[3].innerHTML = "-";
+    }
 
-/* your mission: 
-
-1. Make all the + buttons add 1 to the score of the hole. Do not allow the score to exceed double the par. 
-2. Make all the - buttons subtract 1 from the score of the hole. Do not allow the score to be negative!
-3. Make the "Over" column display the difference, score - par, of the hole.
-4. Make a table row's background color yellow if and only if that table row has a nonzero score.
-5. Make the HTML table row with id="totals" display appropriate totals. Totals should be computed only for holes that have yellow-highlighted nonzero scores. Like the yellow-highlighted table rows above, the "totals" table row background color must be yellow if and only if it has a nonzero score. 
-6. Add to the Action column a new button, C, which clears the current score for a given hole, and re-sets the table row background color to default.
-7. Replace HTML table row code with JavaScript code that appends table rows. That is, delete the HTML elements with ID's 1 through 18, and write a function that loops 18 times, appending the appropriate DOM elements with ID's 1 through 18.  
-8. Add a "RESET" button which clears all user-entered data. Use addEventListener method to add functionality to the button. See: https://www.w3schools.com/js/js_htmldom_eventlistener.asp. 
-9. Add an "ABOUT" button which displays the message, "Golf Scorecard 1.0. All rights reserved."  Use an arrow function to add the "ABOUT" button to the DOM. See: https://www.w3schools.com/Js/js_arrow_function.asp.
-10. Add a "FONT" button which toggles the font size of the entire app, from/to smaller to/from larger.
-*. Advanced (optional): put circles around scores that are birdies, and squares around scores that are bogeys!
-*/
