@@ -13,15 +13,26 @@ elem[1].children[4].children[0].onclick = function(){
   = add1(elem[1]);
 };
 
+elem[19] = document.getElementById("totals");
+
 // create an "add1" function
-function add1 (elem) {
+var totalPar = 72;
+var totalPoints = 0;
+
+
+function add1 (elem, elem19) {
+  
   if(elem.children[2].innerHTML == "-") 
-    elem.children[2].innerHTML = "1";
+    elem.children[2].innerHTML = "0";
+    
+    elem19.children[2].innerHTML = totalScore;
   else {
     if (currentScore < 8){    
         let currentScore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
+        totalScore = totalScore + 1;
+        elem19.children[2].innerHTML = totalScore;
     }
   }
 }
