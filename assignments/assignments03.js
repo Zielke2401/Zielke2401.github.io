@@ -18,6 +18,7 @@ elem[19].children[1].innerHTML = totalPar;
 // create an "add1" function
 var totalPar = 72;
 var totalPoints = 0;
+var overTotal = 0;
 
 
 function add1 (elem, elem19) {
@@ -32,10 +33,17 @@ function add1 (elem, elem19) {
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
         totalScore = totalScore + 1;
-        elem19.children[2].innerHTML = totalScore;
+        elem19.children[2].innerHTML = totalScore;  
     }
   }
+  
+ //find the over  
+  if (Number.parseInt(elem.children[2].innerHTML)- Number.parseInt(elem.children[1].innerHTML) > 0){
+    elem.children[3].innerHTML = (Number.parseInt(elem.children[2].innerHTML)- Number.parseInt(elem.children[1].innerHTML);
+    overTotal = overTotal + (Number.parseInt(elem.children[2].innerHTML)- Number.parseInt(elem.children[1].innerHTML);                             
+    elem19.children[3].innerHTML = overtotal;
 }
+
 
 /* your mission: 
 
