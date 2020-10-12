@@ -9,8 +9,9 @@ elem[1]
 // console.log(elem.children[4].children[0]); 
 
 // assign a function to the + button
-elem[1].children[4].children[0].onclick 
+elem[1].children[4].children[0].onclick = function(){
   = add1(elem[1]);
+};
 
 // create an "add1" function
 function add1 (elem) {
