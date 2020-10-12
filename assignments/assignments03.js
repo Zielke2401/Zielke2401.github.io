@@ -13,7 +13,7 @@ elem[1].children[4].children[0].onclick = function(){
   = add1(elem[1], elem[19]);
 };
 
-elem[19] = document.getElementById("totals");
+elem[19].children[1].innerHTML = totalPar; 
 
 // create an "add1" function
 var totalPar = 72;
