@@ -457,4 +457,5 @@ function add1 (elem, elem19)
       elem.children[2].innerHTML = "-";
       elem.children[3].innerHTML = "-";
     }
+  }
 
