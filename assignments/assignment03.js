@@ -10,15 +10,15 @@ elem[1]
 
 // assign a function to the + button
 elem[1].children[4].children[0].onclick = function(){
-  = add1(elem[1], elem[19]);
+   add1(elem[1], elem[19]);
 };
 
 elem[1].children[4].children[1].onclick = function(){
-  = add1(elem[1], elem[19]);
+   sub1(elem[1], elem[19]);
 };
 
 elem[1].children[4].children[2].onclick = function(){
-  = add1(elem[1], elem[19]);
+   clear(elem[1], elem[19]);
 };
 
 
@@ -32,15 +32,15 @@ elem[2]
 
 // assign a function to the + button
 elem[2].children[4].children[0].onclick = function(){
-  = add1(elem[2], elem[19]);
+   add1(elem[2], elem[19]);
 };
 
 elem[2].children[4].children[1].onclick = function(){
-  = add1(elem[2], elem[19]);
+   sub1(elem[2], elem[19]);
 };
 
 elem[2].children[4].children[2].onclick = function(){
-  = add1(elem[2], elem[19]);
+   clear(elem[2], elem[19]);
 };
 
 elem[3]
@@ -53,15 +53,15 @@ elem[3]
 
 // assign a function to the + button
 elem[3].children[4].children[0].onclick = function(){
-  = add1(elem[3], elem[19]);
+   add1(elem[3], elem[19]);
 };
 
 elem[3].children[4].children[1].onclick = function(){
-  = add1(elem[3], elem[19]);
+   sub1(elem[3], elem[19]);
 };
 
 elem[3].children[4].children[2].onclick = function(){
-  = add1(elem[3], elem[19]);
+   clear(elem[3], elem[19]);
 };
 
 elem[4]
@@ -78,11 +78,11 @@ elem[4].children[4].children[0].onclick = function(){
 };
 
 elem[4].children[4].children[1].onclick = function(){
-  = add1(elem[4], elem[19]);
+  = sub1(elem[4], elem[19]);
 };
 
 elem[4].children[4].children[2].onclick = function(){
-  = add1(elem[4], elem[19]);
+  = clear(elem[4], elem[19]);
 };
 
 
@@ -100,11 +100,11 @@ elem[5].children[4].children[0].onclick = function(){
 };
 
 elem[5].children[4].children[1].onclick = function(){
-  = add1(elem[5], elem[19]);
+  = sub1(elem[5], elem[19]);
 };
 
 elem[5].children[4].children[2].onclick = function(){
-  = add1(elem[5], elem[19]);
+  = clear(elem[5], elem[19]);
 };
 
 
@@ -122,11 +122,11 @@ elem[6].children[4].children[0].onclick = function(){
 };
 
 elem[6].children[4].children[1].onclick = function(){
-  = add1(elem[6], elem[19]);
+  = sub1(elem[6], elem[19]);
 };
 
 elem[6].children[4].children[2].onclick = function(){
-  = add1(elem[6], elem[19]);
+  = clear(elem[6], elem[19]);
 };
 
 
@@ -144,11 +144,11 @@ elem[7].children[4].children[0].onclick = function(){
 };
 
 elem[7].children[4].children[1].onclick = function(){
-  = add1(elem[7], elem[19]);
+  = sub1(elem[7], elem[19]);
 };
 
 elem[7].children[4].children[2].onclick = function(){
-  = add1(elem[7], elem[19]);
+  = clear(elem[7], elem[19]);
 };
 
 
@@ -166,11 +166,11 @@ elem[8].children[4].children[0].onclick = function(){
 };
 
 elem[8].children[4].children[1].onclick = function(){
-  = add1(elem[8], elem[19]);
+  = sub1(elem[8], elem[19]);
 };
 
 elem[8].children[4].children[2].onclick = function(){
-  = add1(elem[8], elem[19]);
+  = clear(elem[8], elem[19]);
 };
 
 
@@ -188,11 +188,11 @@ elem[9].children[4].children[0].onclick = function(){
 };
 
 elem[9].children[4].children[1].onclick = function(){
-  = add1(elem[9], elem[19]);
+  = sub1(elem[9], elem[19]);
 };
 
 elem[9].children[4].children[2].onclick = function(){
-  = add1(elem[9], elem[19]);
+  = clear(elem[9], elem[19]);
 };
 
 elem[10]
@@ -209,11 +209,11 @@ elem[10].children[4].children[0].onclick = function(){
 };
 
 elem[10].children[4].children[1].onclick = function(){
-  = add1(elem[10], elem[19]);
+  = sub1(elem[10], elem[19]);
 };
 
 elem[10].children[4].children[2].onclick = function(){
-  = add1(elem[10], elem[19]);
+  = clear(elem[10], elem[19]);
 };
 
 elem[11]
@@ -230,11 +230,11 @@ elem[11].children[4].children[0].onclick = function(){
 };
 
 elem[11].children[4].children[1].onclick = function(){
-  = add1(elem[11], elem[19]);
+  = sub1(elem[11], elem[19]);
 };
 
 elem[11].children[4].children[2].onclick = function(){
-  = add1(elem[11], elem[19]);
+  = clear(elem[11], elem[19]);
 };
 
 elem[12]
@@ -251,11 +251,11 @@ elem[12].children[4].children[0].onclick = function(){
 };
 
 elem[12].children[4].children[1].onclick = function(){
-  = add1(elem[12], elem[19]);
+  = sub1(elem[12], elem[19]);
 };
 
 elem[12].children[4].children[2].onclick = function(){
-  = add1(elem[12], elem[19]);
+  = clear(elem[12], elem[19]);
 };
 
 
@@ -273,11 +273,11 @@ elem[13].children[4].children[0].onclick = function(){
 };
 
 elem[13].children[4].children[1].onclick = function(){
-  = add1(elem[13], elem[19]);
+  = sub1(elem[13], elem[19]);
 };
 
 elem[13].children[4].children[2].onclick = function(){
-  = add1(elem[13], elem[19]);
+  = clear(elem[13], elem[19]);
 };
 
 elem[14]
@@ -294,11 +294,11 @@ elem[14].children[4].children[0].onclick = function(){
 };
 
 elem[14].children[4].children[1].onclick = function(){
-  = add1(elem[14], elem[19]);
+  = sub1(elem[14], elem[19]);
 };
 
 elem[14].children[4].children[2].onclick = function(){
-  = add1(elem[14], elem[19]);
+  = clear(elem[14], elem[19]);
 };
 
 
@@ -316,11 +316,11 @@ elem[15].children[4].children[0].onclick = function(){
 };
 
 elem[15].children[4].children[1].onclick = function(){
-  = add1(elem[15], elem[19]);
+  = sub1(elem[15], elem[19]);
 };
 
 elem[15].children[4].children[2].onclick = function(){
-  = add1(elem[15], elem[19]);
+  = clear(elem[15], elem[19]);
 };
 
 
@@ -338,11 +338,11 @@ elem[16].children[4].children[0].onclick = function(){
 };
 
 elem[16].children[4].children[1].onclick = function(){
-  = add1(elem[16], elem[19]);
+  = sub1(elem[16], elem[19]);
 };
 
 elem[16].children[4].children[2].onclick = function(){
-  = add1(elem[16], elem[19]);
+  = clear(elem[16], elem[19]);
 };
 
 
@@ -360,11 +360,11 @@ elem[17].children[4].children[0].onclick = function(){
 };
 
 elem[17].children[4].children[1].onclick = function(){
-  = add1(elem[17], elem[19]);
+  = sub1(elem[17], elem[19]);
 };
 
 elem[17].children[4].children[2].onclick = function(){
-  = add1(elem[17], elem[19]);
+  = clear(elem[17], elem[19]);
 };
 
 
@@ -382,11 +382,11 @@ elem[18].children[4].children[0].onclick = function(){
 };
 
 elem[18].children[4].children[1].onclick = function(){
-  = add1(elem[18], elem[19]);
+  = sub1(elem[18], elem[19]);
 };
 
 elem[18].children[4].children[2].onclick = function(){
-  = add1(elem[18], elem[19]);
+  = clear(elem[18], elem[19]);
 };
 
 
