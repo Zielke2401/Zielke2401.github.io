@@ -401,10 +401,11 @@ var overTotal = 0;
 function add1 (elem, elem19) 
 {
   
-  if(elem.children[2].innerHTML == "-") 
+  if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "0";
     
     elem19.children[2].innerHTML = totalScore;
+  }
   else {
     if (elem.children[2].innerHTML < "8"){    
         let currentscore = elem.children[2].innerHTML;
