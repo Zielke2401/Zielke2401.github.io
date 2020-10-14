@@ -74,15 +74,15 @@ elem[4]
 
 // assign a function to the + button
 elem[4].children[4].children[0].onclick = function(){
-  = add1(elem[4], elem[19]);
+  add1(elem[4], elem[19]);
 };
 
 elem[4].children[4].children[1].onclick = function(){
-  = sub1(elem[4], elem[19]);
+   sub1(elem[4], elem[19]);
 };
 
 elem[4].children[4].children[2].onclick = function(){
-  = clear(elem[4], elem[19]);
+   clear(elem[4], elem[19]);
 };
 
 
@@ -96,15 +96,15 @@ elem[5]
 
 // assign a function to the + button
 elem[5].children[4].children[0].onclick = function(){
-  = add1(elem[5], elem[19]);
+   add1(elem[5], elem[19]);
 };
 
 elem[5].children[4].children[1].onclick = function(){
-  = sub1(elem[5], elem[19]);
+   sub1(elem[5], elem[19]);
 };
 
 elem[5].children[4].children[2].onclick = function(){
-  = clear(elem[5], elem[19]);
+   clear(elem[5], elem[19]);
 };
 
 
@@ -118,15 +118,15 @@ elem[6]
 
 // assign a function to the + button
 elem[6].children[4].children[0].onclick = function(){
-  = add1(elem[6], elem[19]);
+   add1(elem[6], elem[19]);
 };
 
 elem[6].children[4].children[1].onclick = function(){
-  = sub1(elem[6], elem[19]);
+   sub1(elem[6], elem[19]);
 };
 
 elem[6].children[4].children[2].onclick = function(){
-  = clear(elem[6], elem[19]);
+   clear(elem[6], elem[19]);
 };
 
 
@@ -140,15 +140,15 @@ elem[7]
 
 // assign a function to the + button
 elem[7].children[4].children[0].onclick = function(){
-  = add1(elem[7], elem[19]);
+   add1(elem[7], elem[19]);
 };
 
 elem[7].children[4].children[1].onclick = function(){
-  = sub1(elem[7], elem[19]);
+   sub1(elem[7], elem[19]);
 };
 
 elem[7].children[4].children[2].onclick = function(){
-  = clear(elem[7], elem[19]);
+   clear(elem[7], elem[19]);
 };
 
 
@@ -162,15 +162,15 @@ elem[8]
 
 // assign a function to the + button
 elem[8].children[4].children[0].onclick = function(){
-  = add1(elem[8], elem[19]);
+   add1(elem[8], elem[19]);
 };
 
 elem[8].children[4].children[1].onclick = function(){
-  = sub1(elem[8], elem[19]);
+   sub1(elem[8], elem[19]);
 };
 
 elem[8].children[4].children[2].onclick = function(){
-  = clear(elem[8], elem[19]);
+   clear(elem[8], elem[19]);
 };
 
 
@@ -184,15 +184,15 @@ elem[9]
 
 // assign a function to the + button
 elem[9].children[4].children[0].onclick = function(){
-  = add1(elem[9], elem[19]);
+   add1(elem[9], elem[19]);
 };
 
 elem[9].children[4].children[1].onclick = function(){
-  = sub1(elem[9], elem[19]);
+   sub1(elem[9], elem[19]);
 };
 
 elem[9].children[4].children[2].onclick = function(){
-  = clear(elem[9], elem[19]);
+   clear(elem[9], elem[19]);
 };
 
 elem[10]
@@ -205,15 +205,15 @@ elem[10]
 
 // assign a function to the + button
 elem[10].children[4].children[0].onclick = function(){
-  = add1(elem[10], elem[19]);
+   add1(elem[10], elem[19]);
 };
 
 elem[10].children[4].children[1].onclick = function(){
-  = sub1(elem[10], elem[19]);
+  sub1(elem[10], elem[19]);
 };
 
 elem[10].children[4].children[2].onclick = function(){
-  = clear(elem[10], elem[19]);
+   clear(elem[10], elem[19]);
 };
 
 elem[11]
@@ -226,15 +226,15 @@ elem[11]
 
 // assign a function to the + button
 elem[11].children[4].children[0].onclick = function(){
-  = add1(elem[11], elem[19]);
+   add1(elem[11], elem[19]);
 };
 
 elem[11].children[4].children[1].onclick = function(){
-  = sub1(elem[11], elem[19]);
+   sub1(elem[11], elem[19]);
 };
 
 elem[11].children[4].children[2].onclick = function(){
-  = clear(elem[11], elem[19]);
+   clear(elem[11], elem[19]);
 };
 
 elem[12]
@@ -247,15 +247,15 @@ elem[12]
 
 // assign a function to the + button
 elem[12].children[4].children[0].onclick = function(){
-  = add1(elem[12], elem[19]);
+   add1(elem[12], elem[19]);
 };
 
 elem[12].children[4].children[1].onclick = function(){
-  = sub1(elem[12], elem[19]);
+   sub1(elem[12], elem[19]);
 };
 
 elem[12].children[4].children[2].onclick = function(){
-  = clear(elem[12], elem[19]);
+   clear(elem[12], elem[19]);
 };
 
 
@@ -269,15 +269,15 @@ elem[13]
 
 // assign a function to the + button
 elem[13].children[4].children[0].onclick = function(){
-  = add1(elem[13], elem[19]);
+   add1(elem[13], elem[19]);
 };
 
 elem[13].children[4].children[1].onclick = function(){
-  = sub1(elem[13], elem[19]);
+   sub1(elem[13], elem[19]);
 };
 
 elem[13].children[4].children[2].onclick = function(){
-  = clear(elem[13], elem[19]);
+  clear(elem[13], elem[19]);
 };
 
 elem[14]
@@ -290,15 +290,15 @@ elem[14]
 
 // assign a function to the + button
 elem[14].children[4].children[0].onclick = function(){
-  = add1(elem[14], elem[19]);
+   add1(elem[14], elem[19]);
 };
 
 elem[14].children[4].children[1].onclick = function(){
-  = sub1(elem[14], elem[19]);
+   sub1(elem[14], elem[19]);
 };
 
 elem[14].children[4].children[2].onclick = function(){
-  = clear(elem[14], elem[19]);
+  clear(elem[14], elem[19]);
 };
 
 
@@ -312,15 +312,15 @@ elem[15]
 
 // assign a function to the + button
 elem[15].children[4].children[0].onclick = function(){
-  = add1(elem[15], elem[19]);
+   add1(elem[15], elem[19]);
 };
 
 elem[15].children[4].children[1].onclick = function(){
-  = sub1(elem[15], elem[19]);
+   sub1(elem[15], elem[19]);
 };
 
 elem[15].children[4].children[2].onclick = function(){
-  = clear(elem[15], elem[19]);
+   clear(elem[15], elem[19]);
 };
 
 
@@ -334,15 +334,15 @@ elem[16]
 
 // assign a function to the + button
 elem[16].children[4].children[0].onclick = function(){
-  = add1(elem[16], elem[19]);
+   add1(elem[16], elem[19]);
 };
 
 elem[16].children[4].children[1].onclick = function(){
-  = sub1(elem[16], elem[19]);
+   sub1(elem[16], elem[19]);
 };
 
 elem[16].children[4].children[2].onclick = function(){
-  = clear(elem[16], elem[19]);
+   clear(elem[16], elem[19]);
 };
 
 
@@ -356,15 +356,15 @@ elem[17]
 
 // assign a function to the + button
 elem[17].children[4].children[0].onclick = function(){
-  = add1(elem[17], elem[19]);
+   add1(elem[17], elem[19]);
 };
 
 elem[17].children[4].children[1].onclick = function(){
-  = sub1(elem[17], elem[19]);
+   sub1(elem[17], elem[19]);
 };
 
 elem[17].children[4].children[2].onclick = function(){
-  = clear(elem[17], elem[19]);
+   clear(elem[17], elem[19]);
 };
 
 
@@ -378,15 +378,15 @@ elem[18]
 
 // assign a function to the + button
 elem[18].children[4].children[0].onclick = function(){
-  = add1(elem[6], elem[19]);
+   add1(elem[6], elem[19]);
 };
 
 elem[18].children[4].children[1].onclick = function(){
-  = sub1(elem[18], elem[19]);
+   sub1(elem[18], elem[19]);
 };
 
 elem[18].children[4].children[2].onclick = function(){
-  = clear(elem[18], elem[19]);
+   clear(elem[18], elem[19]);
 };
 
 
