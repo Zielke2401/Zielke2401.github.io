@@ -391,12 +391,14 @@ elem[18].children[4].children[2].onclick = function(){
 
 
 
-elem[19].children[1].innerHTML = totalPar; 
 
 // create an "add1" function
 var totalPar = 72;
 var totalPoints = 0;
 var overTotal = 0;
+
+elem[19].children[1].innerHTML = totalPar; 
+
 
 function add1 (elem, elem19) 
 {
@@ -404,15 +406,15 @@ function add1 (elem, elem19)
   if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "0";
     
-    elem19.children[2].innerHTML = totalScore;
+    elem19.children[2].innerHTML = totalPoints;
   }
   else {
     if (elem.children[2].innerHTML < "8"){    
         let currentscore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
-        totalScore = totalScore + 1;
-        elem19.children[2].innerHTML = totalScore;  
+        totalPoints = totalPoints + 1;
+        elem19.children[2].innerHTML = totalPoints;  
     }
   }
   
@@ -430,8 +432,8 @@ function add1 (elem, elem19)
       let currentScore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore - 1;
-        totalScore = totalScore - 1;
-        elem19.children[2].innerHTML = totalScore; 
+        totalPoints = totalPoints - 1;
+        elem19.children[2].innerHTML = totalPoints; 
       }
     
       if (elem.children[2].innerHTML >= 4 && elem.children[2].innerHTML <= 8) {
@@ -446,7 +448,7 @@ function add1 (elem, elem19)
     {
       if (elem.children[2].innerHTML != "-")
       {
-      elem19.children[2].innerHTML = totalScore - elem.children[2].innerHTML;
+      elem19.children[2].innerHTML = totalPoints - elem.children[2].innerHTML;
       }
       
       if(elem.children[3].innerHTML != "-")
