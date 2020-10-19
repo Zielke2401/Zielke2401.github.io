@@ -331,7 +331,7 @@ function add1 (elem, elem19)
       }
     }
 }
-  function subtract1(elem, elem19)
+  function sub1(elem, elem19)
   {
     
     
