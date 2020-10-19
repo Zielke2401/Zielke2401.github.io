@@ -285,6 +285,9 @@ elem[18].children[4].children[2].onclick = function(){
 };
 
 
+elem[19] = document.getElementById("totals");
+
+
 var totalPar = 72;
 var totalPoints = 0;
 var overTotal = 0;
