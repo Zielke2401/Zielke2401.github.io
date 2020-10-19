@@ -325,7 +325,7 @@ function add1 (elem, elem19)
       
         overTotal = overTotal + 1;
         
-        elem19.children[3].innerHTML = overtotal;
+        elem19.children[3].innerHTML = overTotal;
        
     }
 
@@ -360,11 +360,11 @@ function add1 (elem, elem19)
       elem[19].children[1].innerHTML = totalPar; 
       
      
-    let currentScore = elem.children[2].innerHTML;
+    let currentPoints = elem.children[2].innerHTML;
     let currentOver = elem.children[3].innerHTML;
-    if (currentScore != "-") { 
-        elem19.children[2].innerHTML = totalScore - currentScore; 
-        totalScore = totalScore - currentScore; 
+    if (currentPoints != "-") { 
+        elem19.children[2].innerHTML = totalPoints - currentPoints; 
+        totalPoints = totalPoints - currentPoints; 
     }
     if (currentOver != "-") { 
         elem19.children[3].innerHTML = overTotal - currentOver;
