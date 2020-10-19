@@ -340,6 +340,8 @@ function add1 (elem, elem19)
         elem19.children[3].innerHTML = overTotal; 
       }
     
+  }
+    
     function clear(elem, elem19)
     {
       elem[19].children[1].innerHTML = totalPar; 
