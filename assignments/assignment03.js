@@ -289,7 +289,7 @@ var totalPar = 72;
 var totalPoints = 0;
 var overTotal = 0;
 
-
+elem[19].children[1].innerHTML = totalPar; 
 
 
 function add1 (elem, elem19) 
@@ -320,7 +320,7 @@ function add1 (elem, elem19)
 
   function subtract1(elem, elem19)
   {
-    elem[19].children[1].innerHTML = totalPar; 
+    
     
     if (elem.children[2].innerHTML > "0")
     {
