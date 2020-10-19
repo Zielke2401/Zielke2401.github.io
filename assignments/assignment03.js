@@ -410,7 +410,7 @@ function add1 (elem, elem19)
   }
   else {
     if (elem.children[2].innerHTML < "8"){    
-        let currentscore = elem.children[2].innerHTML;
+        let currentScore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore + 1;
         totalPoints = totalPoints + 1;
