@@ -293,9 +293,7 @@ elem[19].children[1].innerHTML = totalPar;
 
 
 function add1 (elem, elem19) 
-{
-  elem[19].children[1].innerHTML = totalPar; 
-  
+{    
   if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "0";
     
