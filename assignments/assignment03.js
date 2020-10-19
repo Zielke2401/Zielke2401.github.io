@@ -292,7 +292,6 @@ var totalPar = 72;
 var totalPoints = 0;
 var overTotal = 0;
 
-elem[19].children[1].innerHTML = totalPar; 
 
 
 function add1 (elem, elem19) 
@@ -301,30 +300,43 @@ function add1 (elem, elem19)
     elem.children[2].innerHTML = "0";
     
     elem19.children[2].innerHTML = totalPoints;
-  }
-  else {
-    if (elem.children[2].innerHTML < "8"){    
-        let currentScore = elem.children[2].innerHTML;
-        currentScore = Number.parseInt(currentScore);
-        elem.children[2].innerHTML = currentScore + 1;
-        totalPoints = totalPoints + 1;
-        elem19.children[2].innerHTML = totalPoints;  
-    }
+  
   }
   
+  elem19.children[1].innerHTML = totalPar; 
+
+  
+     
+  let currentScore = elem.children[2].innerHTML;
+  currentScore = Number.parseInt(currentScore);
+  elem.children[2].innerHTML = currentScore + 1;
+  totalPoints = totalPoints + 1;
+  elem19.children[2].innerHTML = totalPoints;  
+  
+  
  //find the over  
-  if ((elem.children[2].innerHTML)- (elem.children[1].innerHTML) > 0){
-    elem.children[3].innerHTML = (elem.children[2].innerHTML)- (elem.children[1].innerHTML);
-    overTotal = overTotal + (elem.children[2].innerHTML)- (elem.children[1].innerHTML);                             
-    elem19.children[3].innerHTML = overtotal;
-}
+  if (elem.children[2].innerHTML > 4) {
+       
+        let currentOver;
+        
+        currentOver = elem.children[2].innerHTML - elem.children[1].innerHTML;
+     
+        elem.children[3].innerHTML = currentOver;
+      
+        overTotal = overTotal + 1;
+        
+        elem19.children[3].innerHTML = overtotal;
+       
+    }
 
   function subtract1(elem, elem19)
   {
     
     
     if (elem.children[2].innerHTML > "0")
+      
     {
+      //find the total points
       let currentScore = elem.children[2].innerHTML;
         currentScore = Number.parseInt(currentScore);
         elem.children[2].innerHTML = currentScore - 1;
@@ -334,8 +346,8 @@ function add1 (elem, elem19)
     
       //find the over 
     if (elem.children[2].innerHTML >= 4) { 
-        let currentover; 
-        currentover = elem.children[2].innerHTML - elem.children[1].innerHTML; 
+        let currentOver; 
+        currentOver = elem.children[2].innerHTML - elem.children[1].innerHTML; 
         overTotal = overTotal - 1; 
         elem.children[3].innerHTML = overTotal; 
         elem19.children[3].innerHTML = overTotal; 
@@ -350,13 +362,13 @@ function add1 (elem, elem19)
      
     let currentScore = elem.children[2].innerHTML;
     let currentOver = elem.children[3].innerHTML;
-    if (curscore != "-") { 
-        elem19.children[2].innerHTML = totalscore - curscore; 
-        totalscore = totalscore - curscore; 
+    if (currentScore != "-") { 
+        elem19.children[2].innerHTML = totalScore - currentScore; 
+        totalScore = totalScore - currentScore; 
     }
-    if (curover != "-") { 
-        elem19.children[3].innerHTML = overTotal - curover;
-        overTotal = overTotal - curover; 
+    if (currentOver != "-") { 
+        elem19.children[3].innerHTML = overTotal - currentOver;
+        overTotal = overTotal - currentOver; 
     }
     elem.children[2].innerHTML = "-"; 
     elem.children[3].innerHTML = "-"; 
