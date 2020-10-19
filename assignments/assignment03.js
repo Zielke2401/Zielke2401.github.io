@@ -337,7 +337,7 @@ function add1 (elem, elem19)
         let currentover; 
         currentover = elem.children[2].innerHTML - elem.children[1].innerHTML; 
         overTotal = overTotal - 1; 
-        elem.children[3].innerHTML = currentover; 
+        elem.children[3].innerHTML = overTotal; 
         elem19.children[3].innerHTML = overTotal; 
       }
     
@@ -355,8 +355,8 @@ function add1 (elem, elem19)
         totalscore = totalscore - curscore; 
     }
     if (curover != "-") { 
-        elem19.children[3].innerHTML = overtotal - curover;
-        overtotal = overtotal - curover; 
+        elem19.children[3].innerHTML = overTotal - curover;
+        overTotal = overTotal - curover; 
     }
     elem.children[2].innerHTML = "-"; 
     elem.children[3].innerHTML = "-"; 
