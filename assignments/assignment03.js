@@ -295,40 +295,42 @@ var overTotal = 0;
 
 
 function add1 (elem, elem19) 
-{    
-  if(elem.children[2].innerHTML == "-") {
-    elem.children[2].innerHTML = "0";
-    
-    elem19.children[2].innerHTML = totalPoints;
-  
-  }
-  
-  elem19.children[1].innerHTML = totalPar; 
+{ 
+  if (elem.children[2].innerHTML < 8)
+  {
+    if(elem.children[2].innerHTML == "-") {
+      elem.children[2].innerHTML = "0";
 
-  
-     
-  let currentScore = elem.children[2].innerHTML;
-  currentScore = Number.parseInt(currentScore);
-  elem.children[2].innerHTML = currentScore + 1;
-  totalPoints = totalPoints + 1;
-  elem19.children[2].innerHTML = totalPoints;  
-  
-  
- //find the over  
-  if (elem.children[2].innerHTML > 4) {
-       
-        let currentOver;
-        
-        currentOver = elem.children[2].innerHTML - elem.children[1].innerHTML;
-     
-        elem.children[3].innerHTML = currentOver;
-      
-        overTotal = overTotal + 1;
-        
-        elem19.children[3].innerHTML = overTotal;
-       
+      elem19.children[2].innerHTML = totalPoints;
+
     }
 
+    elem19.children[1].innerHTML = totalPar; 
+
+
+
+    let currentScore = elem.children[2].innerHTML;
+    currentScore = Number.parseInt(currentScore);
+    elem.children[2].innerHTML = currentScore + 1;
+    totalPoints = totalPoints + 1;
+    elem19.children[2].innerHTML = totalPoints;  
+
+
+   //find the over  
+    if (elem.children[2].innerHTML > 4) {
+
+          let currentOver;
+
+          currentOver = elem.children[2].innerHTML - elem.children[1].innerHTML;
+
+          elem.children[3].innerHTML = currentOver;
+
+          overTotal = overTotal + 1;
+
+          elem19.children[3].innerHTML = overTotal;
+      }
+    }
+}
   function subtract1(elem, elem19)
   {
     
