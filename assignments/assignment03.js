@@ -376,5 +376,5 @@ function add1 (elem, elem19)
     elem.children[3].innerHTML = "-"; 
     }
   
-}
+
 
