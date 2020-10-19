@@ -333,7 +333,7 @@ function add1 (elem, elem19)
 }
   function sub1(elem, elem19)
   {
-    
+    elem.children[1].innerHTML = totalPar;
     
     if (elem.children[2].innerHTML > "0")
       
@@ -359,7 +359,7 @@ function add1 (elem, elem19)
     
     function clear(elem, elem19)
     {
-      elem[19].children[1].innerHTML = totalPar; 
+      elem.children[1].innerHTML = totalPar; 
       
      
     let currentPoints = elem.children[2].innerHTML;
