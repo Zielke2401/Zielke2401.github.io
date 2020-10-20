@@ -1,4 +1,11 @@
-//8:10
+/*Dr. Corser I just wanted to let you know that I know this program doesn't quite work correctly
+I'm not trying to make any excuses as you are given us extra time as it is
+but my grandmother recently got diagnosed with terminal cancer so I have been having to help with her care
+as well as help my parents with housework. I just want to apologize for having to turn in a nonworking program and I
+didn't want you to think its not working because I don't care, I just haven't had alot of time to sit and debug my code. So
+again I apologize for the incomplete program. 
+*/
+
 
 let elem = [];
 
@@ -10,10 +17,10 @@ elem[1].children[4].children[0].onclick = function() {
     add1(elem[1], elem[19]); };
 
 elem[1].children[4].children[1].onclick = function() {
-    subt1(elem[1], elem[19]); };
+    sub1(elem[1], elem[19]); };
 
 elem[1].children[4].children[2].onclick = function() {
-    clearrow(elem[1], elem[19]); };
+    clear(elem[1], elem[19]); };
 
 elem[2] = document.getElementById("2");
 
@@ -21,10 +28,10 @@ elem[2].children[4].children[0].onclick = function() {
     add1(elem[2], elem[19]); };
 
 elem[2].children[4].children[1].onclick = function() {
-    subt1(elem[2], elem[19]); };
+    sub1(elem[2], elem[19]); };
 
 elem[2].children[4].children[2].onclick = function() {
-    clearrow(elem[2], elem[19]); };
+    clear(elem[2], elem[19]); };
 
 elem[3] = document.getElementById("3");
 
@@ -32,10 +39,10 @@ elem[3].children[4].children[0].onclick = function() {
     add1(elem[3], elem[19]); };
 
 elem[3].children[4].children[1].onclick = function() {
-    subt1(elem[3], elem[19]); };
+    sub1(elem[3], elem[19]); };
 
 elem[3].children[4].children[2].onclick = function() {
-    clearrow(elem[3], elem[19]); };
+    clear(elem[3], elem[19]); };
 
 elem[4] = document.getElementById("4");
 
@@ -43,10 +50,10 @@ elem[4].children[4].children[0].onclick = function() {
     add1(elem[4], elem[19]); };
 
 elem[4].children[4].children[1].onclick = function() {
-    subt1(elem[4], elem[19]); };
+    sub1(elem[4], elem[19]); };
 
 elem[4].children[4].children[2].onclick = function() {
-    clearrow(elem[4], elem[19]); };
+    clear(elem[4], elem[19]); };
 
 elem[5] = document.getElementById("5");
 
@@ -54,10 +61,10 @@ elem[5].children[4].children[0].onclick = function() {
     add1(elem[5], elem[19]); };
 
 elem[5].children[4].children[1].onclick = function() {
-    subt1(elem[5], elem[19]); };
+    sub1(elem[5], elem[19]); };
 
 elem[5].children[4].children[2].onclick = function() {
-    clearrow(elem[5], elem[19]); };
+    clear(elem[5], elem[19]); };
 
 elem[6] = document.getElementById("6");
 
@@ -65,10 +72,10 @@ elem[6].children[4].children[0].onclick = function() {
     add1(elem[6], elem[19]); };
 
 elem[6].children[4].children[1].onclick = function() {
-    subt1(elem[6], elem[19]); };
+    sub1(elem[6], elem[19]); };
 
 elem[6].children[4].children[2].onclick = function() {
-    clearrow(elem[6], elem[19]); };
+    clear(elem[6], elem[19]); };
 
 elem[7] = document.getElementById("7");
 
@@ -76,10 +83,10 @@ elem[7].children[4].children[0].onclick = function() {
     add1(elem[7], elem[19]); };
 
 elem[7].children[4].children[1].onclick = function() {
-    subt1(elem[7], elem[19]); };
+    sub1(elem[7], elem[19]); };
 
 elem[7].children[4].children[2].onclick = function() {
-    clearrow(elem[7], elem[19]); };
+    clear(elem[7], elem[19]); };
 
 elem[8] = document.getElementById("8");
 
@@ -87,10 +94,10 @@ elem[8].children[4].children[0].onclick = function() {
     add1(elem[8], elem[19]); };
 
 elem[8].children[4].children[1].onclick = function() {
-    subt1(elem[8], elem[19]); };
+    sub1(elem[8], elem[19]); };
 
 elem[8].children[4].children[2].onclick = function() {
-    clearrow(elem[8], elem[19]); };
+    clear(elem[8], elem[19]); };
 
 elem[9] = document.getElementById("9");
 
@@ -98,10 +105,10 @@ elem[9].children[4].children[0].onclick = function() {
     add1(elem[9], elem[19]); };
 
 elem[9].children[4].children[1].onclick = function() {
-    subt1(elem[9], elem[19]); };
+    sub1(elem[9], elem[19]); };
 
 elem[9].children[4].children[2].onclick = function() {
-    clearrow(elem[9], elem[19]); };
+    clear(elem[9], elem[19]); };
 
 elem[10] = document.getElementById("10");
 
@@ -109,10 +116,10 @@ elem[10].children[4].children[0].onclick = function() {
     add1(elem[10], elem[19]); };
 
 elem[10].children[4].children[1].onclick = function() {
-    subt1(elem[10], elem[19]); };
+    sub1(elem[10], elem[19]); };
 
 elem[10].children[4].children[2].onclick = function() {
-    clearrow(elem[10], elem[19]); };
+    clear(elem[10], elem[19]); };
 
 elem[11] = document.getElementById("11");
 
@@ -120,10 +127,10 @@ elem[11].children[4].children[0].onclick = function() {
     add1(elem[11], elem[19]); };
 
 elem[11].children[4].children[1].onclick = function() {
-    subt1(elem[11], elem[19]); };
+    sub1(elem[11], elem[19]); };
 
 elem[11].children[4].children[2].onclick = function() {
-    clearrow(elem[11], elem[19]); };
+    clear(elem[11], elem[19]); };
 
 elem[12] = document.getElementById("12");
 
@@ -131,10 +138,10 @@ elem[12].children[4].children[0].onclick = function() {
     add1(elem[12], elem[19]); };
 
 elem[12].children[4].children[1].onclick = function() {
-    subt1(elem[12], elem[19]); };
+    sub1(elem[12], elem[19]); };
 
 elem[12].children[4].children[2].onclick = function() {
-    clearrow(elem[12], elem[19]); };
+    clear(elem[12], elem[19]); };
 
 elem[13] = document.getElementById("13");
 
@@ -142,10 +149,10 @@ elem[13].children[4].children[0].onclick = function() {
     add1(elem[13], elem[19]); };
 
 elem[13].children[4].children[1].onclick = function() {
-    subt1(elem[13], elem[19]); };
+    sub1(elem[13], elem[19]); };
 
 elem[13].children[4].children[2].onclick = function() {
-    clearrow(elem[13], elem[19]); };
+    clear(elem[13], elem[19]); };
 
 elem[14] = document.getElementById("14");
 
@@ -153,10 +160,10 @@ elem[14].children[4].children[0].onclick = function() {
     add1(elem[14], elem[19]); };
 
 elem[14].children[4].children[1].onclick = function() {
-    subt1(elem[14], elem[19]); };
+    sub1(elem[14], elem[19]); };
 
 elem[14].children[4].children[2].onclick = function() {
-    clearrow(elem[14], elem[19]); };
+    clear(elem[14], elem[19]); };
 
 elem[15] = document.getElementById("15");
 
@@ -164,10 +171,10 @@ elem[15].children[4].children[0].onclick = function() {
     add1(elem[15], elem[19]); };
 
 elem[15].children[4].children[1].onclick = function() {
-    subt1(elem[15], elem[19]); };
+    sub1(elem[15], elem[19]); };
 
 elem[15].children[4].children[2].onclick = function() {
-    clearrow(elem[15], elem[19]); };
+    clear(elem[15], elem[19]); };
 
 elem[16] = document.getElementById("16");
 
@@ -175,10 +182,10 @@ elem[16].children[4].children[0].onclick = function() {
     add1(elem[16], elem[19]); };
 
 elem[16].children[4].children[1].onclick = function() {
-    subt1(elem[16], elem[19]); };
+    sub1(elem[16], elem[19]); };
 
 elem[16].children[4].children[2].onclick = function() {
-    clearrow(elem[16], elem[19]); };
+    clear(elem[16], elem[19]); };
 
 elem[17] = document.getElementById("17");
 
@@ -186,10 +193,10 @@ elem[17].children[4].children[0].onclick = function() {
     add1(elem[17], elem[19]); };
 
 elem[17].children[4].children[1].onclick = function() {
-    subt1(elem[17], elem[19]); };
+    sub1(elem[17], elem[19]); };
 
 elem[17].children[4].children[2].onclick = function() {
-    clearrow(elem[17], elem[19]); };
+    clear(elem[17], elem[19]); };
 
 elem[18] = document.getElementById("18");
 
@@ -197,96 +204,104 @@ elem[18].children[4].children[0].onclick = function() {
     add1(elem[18], elem[19]); };
 
 elem[18].children[4].children[1].onclick = function() {
-    subt1(elem[18], elem[19]); };
+    sub1(elem[18], elem[19]); };
 
 elem[18].children[4].children[2].onclick = function() {
-    clearrow(elem[18], elem[19]); };
+    clear(elem[18], elem[19]); };
 
 //-------------------------------------------------------
+//End of assigning function to buttons
 
 
 
 elem[19] = document.getElementById("totals");
 
-var totalPoints = 0;
 
+//create variables to hold the totals
 var par = 72;
 
-var overtotal = 0;
+var totalPoints = 0;
+
+var overTotal = 0;
 
 function add1(elem, lastElem) {
-    /*
+    //if there is not score count it as zero
     if (elem.children[2].innerHTML == "-") {
        
         elem.children[2].innerHTML = "0";
-       
-        
-        
     }
-    */
-    if (lastElem.children[2].innerHTML == "-") {
-       lastElem.children[2].innerHTML = "1";
-       //lastElem.children[2].inneHTML = totalPoints;
-    }
-
+   
+    //set the total for the pars 
     lastElem.children[1].innerHTML = par;
-    
-    if( elem.children[2] < "8")
-    {
-        let currentScore = elem.children[2].innerHTML;
+   
+    let currentScore = elem.children[2].innerHTML;
+    //allow the score to be incremented as long as it is less than two times par
+    if( Number.parseInt(currentScore) < 8)
+    {  
+        //convert the html into an int
         currentScore = Number.parseInt(currentScore);
+        //add one to the points
         elem.children[2].innerHTML = currentScore + 1;
+        //increment the totalPoints
         totalPoints = totalPoints + 1;
+        //assign the totalPoints to the last row
         elem19.children[2].innerHTML = totalPoints;
     }
-    /*
-    if (elem.children[2].innerHTML == 5) {
-        elem.children[3].innerHTML = "0";
-        lastElem.children[2].inneHTML = overtotal;
-    }
-    if (lastElem.children[3].innerHTML == "-" && elem.children[2].innerHTML == 5) {
-        lastElem.children[3].innerHTML = 1;
-
-    }*/
-    
+  //if number of putts is over par find the over
     if (elem.children[2].innerHTML > 4) {
         let currentover;
+        //find the over by subtracting
         currentover = elem.children[2].innerHTML - elem.children[1].innerHTML;
+        //set the over
         elem.children[3].innerHTML = currentover;
-        overtotal = overtotal + 1;
-        lastElem.children[3].innerHTML = overtotal;
+        //increment the total over
+        overTotal = overTotal + 1;
+        //assign the overTotal to the last row
+        lastElem.children[3].innerHTML = overTotal;
     }
 }
-
-function subt1(elem, lastElem) {
+//subtract one from total points
+function sub1(elem, lastElem) {
+    //subtract one as long as its over zero
     if (elem.children[2].innerHTML > "0") {
         let currentScore = elem.children[2].innerHTML;
+        //convert into int
         currentScore = Number.parseInt(currentScore);
+        //subtract one from score and output that
         elem.children[2].innerHTML = currentScore - 1;
+        //subtract one from total points
         totalPoints = totalPoints - 1;
+        //output total points
         lastElem.children[2].innerHTML = totalPoints;
     }
-
+    //find over if putts are over four
     if (elem.children[2].innerHTML >= 4) {
-        let currentover;
-        currentover = elem.children[2].innerHTML - elem.children[1].innerHTML;
-        overtotal = overtotal - 1;
-        elem.children[3].innerHTML = currentover;
-        lastElem.children[3].innerHTML = overtotal;
+        let currentOver;
+        //subtract to find over
+        currentOver = elem.children[2].innerHTML - elem.children[1].innerHTML;
+        //subtract one from the total over
+        overTotal = overTotal - 1;
+        //output the new over for the hole
+        elem.children[3].innerHTML = currentOver;
+        //output the total over
+        lastElem.children[3].innerHTML = overTotal;
     }
 }
-
-function clearrow(elem, lastElem) {
-    let curscore = elem.children[2].innerHTML;
-    let curover = elem.children[3].innerHTML;
-    if (curscore != "-") {
-        lastElem.children[2].innerHTML = totalPoints - curscore;
-        totalPoints = totalPoints - curscore;
+//clear the row
+function clear(elem, lastElem) {
+    let currentScore = elem.children[2].innerHTML;
+    let currentOver = elem.children[3].innerHTML;
+    //if there is a value in score subtract it from the total points
+    if (currentScore != "-") {
+        lastElem.children[2].innerHTML = totalPoints - currentScore;
+        totalPoints = totalPoints - currentScore;
     }
-    if (curover != "-") {
-        lastElem.children[3].innerHTML = overtotal - curover;
-        overtotal = overtotal - curover;
+    //if there is an over subtract it from the total over
+    if (currentOver != "-") {
+        lastElem.children[3].innerHTML = overTotal - currentOver;
+        overTotal = overTotal - currentOver;
     }
+    //set the output back to a null value
     elem.children[2].innerHTML = "-";
     elem.children[3].innerHTML = "-";
 }
