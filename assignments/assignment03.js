@@ -1,3 +1,5 @@
+//8:10
+
 let elem = [];
 
 //---------------- assign onclick function to plus/minus/clear buttons----------------
@@ -213,17 +215,19 @@ var par = 72;
 var overtotal = 0;
 
 function add1(elem, lastElem) {
+    /*
     if (elem.children[2].innerHTML == "-") {
        
         elem.children[2].innerHTML = "0";
        
-        lastElem.children[2].inneHTML = totalPoints;
+        
         
     }
-    
-    //if (lastElem.children[2].innerHTML == "-") {
-      //  lastElem.children[2].innerHTML = "1";
-    //}
+    */
+    if (lastElem.children[2].innerHTML == "-") {
+       lastElem.children[2].innerHTML = "1";
+       //lastElem.children[2].inneHTML = totalPoints;
+    }
 
     lastElem.children[1].innerHTML = par;
     
