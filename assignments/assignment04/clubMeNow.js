@@ -129,7 +129,7 @@ function resetAllClubDistances() {
 function displayAbout() {
 	alert("ClubMeNow version 1.0.0");
 	
-	window.location.href = "clubAbout.html";
+	window.location.href = "clubDistanceList.html";
 }
 
 // navigate to "Penalty Info" screen
