@@ -91,16 +91,7 @@ function displayClubDistanceEntryForm(c) {
 
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
-        let tblbody = document.getElementById('clubTable').children[0]; 
-	let previous=0;
-		tblbody.children[0].children[1].children[0].innerHTML="0";
-		tblbody.children[0].children[1].children[1].innerHTML="0";	
-	
-	
-	// create 2d global array, called "clubs" throughout app
-	// columns - 0: sortPosition, 1: clubAbbrev, 2: clubName, 
-	// 3: avgDist, 4: minDist, 5: maxDist, 6: numOfShots, 
-	// 7: loft/degrees, 8: typical/men, 9: typical/women
+        let table = document.getElementById('clubTable').children[0]; 
 	
 	if(displayClubDistanceEntryForm.forundoing==0){
 		let clubs = [
