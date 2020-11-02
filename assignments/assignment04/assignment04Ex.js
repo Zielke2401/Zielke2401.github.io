@@ -3,9 +3,16 @@ let person = {
   firstName: "Jane",
   lastName: "Doe",
   age: 45,
+  streetAddress: "2993 Real Rd",
+  city:"Saginaw",
+  state:"MI",
+  zipCode: 48601,
   fullName: function() {return this.firstName  + " " + person.lastName}
+    fullAddress: function() {return this.streetAddress + " " + this.city + " " + this.state + " " + this.zipCode}
 }
 document.getElementById("1A").innerHTML = person.fullName();
+document.getElementByID("1B").innerHTML = person.fullAddress();
+
 
 // Instructions
 // modify person object, above, as follows
@@ -41,32 +48,36 @@ table2a.setAttribute("width", "100%")
 appendTableRow5(table2b,"1","2","3","4","5");
 appendTableRow5(table2b,"6","7","8","9","10");
 appendTableRow5(table2b,"11","12","13","14","15");
+appendTableRow5(table2b,"16","17","18","19","20");
+appendTableRow5(table2b,"21","22","23","24","25");
+
 
 // append to tableobj a 3-column table row 
-function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) {
-  // create column (table division) DOM objects
+function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) 
+{
+  // create column DOM objects
   let td1 = document.createElement("td");
   let td2 = document.createElement("td");
   let td3 = document.createElement("td");
   let td4 = document.createElement("td");
   let td5 = document.createElement("td");
 
-  // insert content into columns
+  //put content into items
   td1.innerHTML = col1;
   td2.innerHTML = col2;
   td3.innerHTML = col3;
   td4.innerHTML = col4;
   td5.innerHTML = col5;
 
-  // create table row DOM object
+  //create table object
   let tr = document.createElement("tr");
-  // append table divisions (columns) to table row
+  // append colums to table row
   tr.appendChild(td1);
   tr.appendChild(td2);
   tr.appendChild(td3);
   tr.appendChild(td4);
   tr.appendChild(td5);
-  // append the row to the tbody element in the table
+  //append row ot table object
   tableobj.children[0].appendChild(tr);
 }
 
@@ -85,7 +96,46 @@ let table3A = document.getElementById("3A");
 let table3B = createTable("table3B");
 div3B.appendChild(table3B); 
 
+const P1 = parseInt(table3A.children[0].children[0].children[1].children[1].innerHTML); 
+const P2 = parseInt(table3A.children[0].children[0].children[2].children[1].innerHTML); 
+const P3 = parseInt(table3A.children[0].children[0].children[3].children[1].innerHTML); 
+const Q1 = parseInt(table3A.children[0].children[0].children[1].children[2].innerHTML); 
+const Q2 = parseInt(table3A.children[0].children[0].children[2].children[2].innerHTML); 
+const Q3 = parseInt(table3A.children[0].children[0].children[3].children[2].innerHTML); 
 
+
+
+function add(tableobj, top, col1, col2, col3, col4)
+{
+  
+  // create column DOM objects
+  let td0 = document.createElement("td");
+  let td1 = document.createElement("td");
+  let td2 = document.createElement("td");
+  let td3 = document.createElement("td");
+  let td4 = document.createElement("td");
+
+  //put content into items
+  td0.innerHTML = top;
+  td1.innerHTML = col1;
+  td2.innerHTML = col2;
+  td3.innerHTML = col3;
+  td4.innerHTML = col4;
+
+  //create table object
+  let tr = document.createElement("tr");
+  // append colums to table row
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tr.appendChild(td4);
+  tr.appendChild(td5);
+  //append row ot table object
+  tableobj.children[0].appendChild(tr);
+  
+  
+}
+  
 // 9. Revise a non-object-oriented HTML form. Make it so the field in focus displays *only* its own error (not the errors of all the other fields), however, if the user clicks the "validate" button, then display all errors.
 // code below is from: https://www.guru99.com/practical-code-examples-using-javascript.html 
 
