@@ -7,8 +7,8 @@ let person = {
   city:"Saginaw",
   state:"MI",
   zipCode: 48601,
-  fullName: function() {return this.firstName  + " " + person.lastName}
-    fullAddress: function() {return this.streetAddress + " " + this.city + " " + this.state + " " + this.zipCode}
+  fullName: function() {return this.firstName  + " " + person.lastName},
+  fullAddress: function() {return this.streetAddress + " " + this.city + " " + this.state + " " + this.zipCode}
 }
 document.getElementById("1A").innerHTML = person.fullName();
 document.getElementByID("1B").innerHTML = person.fullAddress();
