@@ -136,11 +136,11 @@ function addrow(tableobj, top, col1, col2, col3, col4)
   //create table object
   let tr = document.createElement("tr");
   // append colums to table row
+  tr.appendChild(td0);
   tr.appendChild(td1);
   tr.appendChild(td2);
   tr.appendChild(td3);
   tr.appendChild(td4);
-  tr.appendChild(td5);
   //append row ot table object
   tableobj.children[0].appendChild(tr);
   
