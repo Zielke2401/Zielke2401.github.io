@@ -133,6 +133,12 @@ function addrow(tableobj, top, col1, col2, col3, col4)
   td3.innerHTML = col3;
   td4.innerHTML = col4;
 
+  
+  td0.setAttribute("Style", "border:1px solid black;");
+  td1.setAttribute("Style", "border:1px solid black;"); 
+  td2.setAttribute("Style", "border:1px solid black;"); 
+  td3.setAttribute("Style", "border:1px solid black;"); 
+  td4.setAttribute("Style", "border:1px solid black;");
   //create table object
   let tr = document.createElement("tr");
   // append colums to table row
@@ -163,7 +169,7 @@ function addrow(tableobj, top, col1, col2, col3, col4)
     // function: validate() ---------------------------------------------
     function validate() {
         // initialize input array
-        var inputs = new Array();
+        const inputs = new Array();
         inputs[0] = document.getElementById('first').value;
         inputs[1] = document.getElementById('last').value;
         inputs[2] = document.getElementById('email').value;
@@ -171,7 +177,7 @@ function addrow(tableobj, top, col1, col2, col3, col4)
         inputs[4] = document.getElementById('password').value;
         inputs[5] = document.getElementById('confirm').value;
         // initialize error array
-        var errors = new Array();
+        const errors = new Array();
         errors[0] = "<span style='color:red'>Please enter your first name!</span>";
         errors[1] = "<span style='color:red'>Please enter your last name!</span>";
         errors[2] = "<span style='color:red'>Please enter your email!</span>";
@@ -209,11 +215,22 @@ function addrow(tableobj, top, col1, col2, col3, col4)
 
     // function: finalValidate() ------------------------------------
     function finalValidate() {
-        var count = 0;
+        const count = 0;
+        errors[0] = "<span style='color:red'>Please enter your first name!</span>";
+        errors[1] = "<span style='color:red'>Please enter your last name!</span>";
+        errors[2] = "<span style='color:red'>Please enter your email!</span>";
+        errors[3] = "<span style='color:red'>Please enter your user id!</span>";
+        errors[4] = "<span style='color:red'>Please enter your password!</span>";
+        errors[5] = "<span style='color:red'>Please confirm your password!</span>";
+      
         for (i = 0; i < 6; i++) {
             var div = divs[i];
             if (document.getElementById(div).innerHTML == "OK!")
                 count = count + 1;
+            else
+            {
+              document.getElementById(divs[i]).innerHTML = errors[i];
+            }
         }
         if (count == 6)
             document.getElementById("errFinal").innerHTML 
@@ -250,6 +267,12 @@ let formArray = [
 ];
 
 // Step 3. loop through the JS object array to populate the form
+
+let div5b = document.getElementById("5B"); 
+let table5b = createTable("table5b") 
+form00.appendChild(table00); 
+div5b.appendChild(table5b); 
+
 
 for (i in formArray)
 {
