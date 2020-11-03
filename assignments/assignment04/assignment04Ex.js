@@ -52,7 +52,7 @@ appendTableRow5(table2b,"16","17","18","19","20");
 appendTableRow5(table2b,"21","22","23","24","25");
 
 
-// append to tableobj a 3-column table row 
+// append to tableobj a 5-column table row 
 function appendTableRow5 (tableobj, col1, col2, col3,col4,col5) 
 {
   // create column DOM objects
@@ -77,7 +77,7 @@ function appendTableRow5 (tableobj, col1, col2, col3,col4,col5)
   tr.appendChild(td3);
   tr.appendChild(td4);
   tr.appendChild(td5);
-  //append row ot table object
+  //append row to table object
   tableobj.children[0].appendChild(tr);
 }
 
@@ -96,6 +96,8 @@ let table3A = document.getElementById("3A");
 let table3B = createTable("table3B");
 div3B.appendChild(table3B); 
 
+
+//retrieve the values
 const P1 = parseInt(table3A.children[0].children[0].children[1].children[1].innerHTML); 
 const P2 = parseInt(table3A.children[0].children[0].children[2].children[1].innerHTML); 
 const P3 = parseInt(table3A.children[0].children[0].children[3].children[1].innerHTML); 
@@ -103,9 +105,18 @@ const Q1 = parseInt(table3A.children[0].children[0].children[1].children[2].inne
 const Q2 = parseInt(table3A.children[0].children[0].children[2].children[2].innerHTML); 
 const Q3 = parseInt(table3A.children[0].children[0].children[3].children[2].innerHTML); 
 
+//set the style
+table3B.setAttribute("style", "border:1px solid black;");
+table3B.setAttribute("width", "100%");
 
+//put the values in the row
+addrow(table3B, "Item", "Price", "Qty", "Price * Qty"); 
+addrow(table3B, "Thingamabob", "1.00", "1", p00 * p10);
+addrow(table3B, "Whachamacallit", "2.00", "2", p01 * p11);
+addrow(table3B, "Doohickey", "3.00", "3", p02 * p12); 
+addrow(table3B, "Grand Total:", P1 + P2 + P3 + ".00", Q1 + Q2 + Q3, P1 * Q1 + P2 * Q2 + P3 * Q3); 
 
-function add(tableobj, top, col1, col2, col3, col4)
+function addrow(tableobj, top, col1, col2, col3, col4)
 {
   
   // create column DOM objects
