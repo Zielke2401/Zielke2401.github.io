@@ -231,22 +231,30 @@ form00.appendChild(table00);
 let formArray = [
   {label: "First name:", inputType: "text", id: "first10", 
     onkeyup: "validate10();", errorId: "errFirst10"}, 
+  
   {label: "Last name:",  inputType: "text", id: "last10",  
     onkeyup: "validate10();", errorId: "errLast10" }, 
+  
   {label: "Email:",      inputType: "text", id: "email10", 
     onkeyup: "validate10();", errorId: "errEmail10"}, 
+  
   {label: "User id:",    inputType: "text", id: "uid10",   
     onkeyup: "validate10();", errorId: "errUid10"  }, 
+  
   {label: "Password:",   inputType: "password", id: "password10", 
     onkeyup: "validate10();", errorId: "errPassword10"}, 
+  
   {label: "Confirm Password:", inputType: "password", id: "confirm10", 
     onkeyup: "validate10();", errorId: "errConfirm10"}
 ];
 
 // Step 3. loop through the JS object array to populate the form
 
-// your code here
-
+for (i in formArray)
+{
+   table5b.setAttribute("style", "border:1px solid black;") 
+   table5b.setAttribute("width", "100%") 
+}
 // append to tableobj a 3-column table row 
 function appendTableRow3 (tableobj, col1, col2, col3) {
   // create column (table division) DOM objects
