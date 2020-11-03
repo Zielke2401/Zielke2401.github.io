@@ -179,21 +179,23 @@ function addrow(tableobj, top, col1, col2, col3, col4)
         errors[5] = "<span style='color:red'>Please confirm your password!</span>";
         // update error array with error message
         for (i in inputs) {
-            var errMessage = errors[i];
-            var div = divs[i];
+            let errMessage = errors[i];
+            let div = divs[i];
             if (inputs[i] == "")
                 document.getElementById(div).innerHTML = errMessage;
-            else if (i == 2) {
-                var atpos = inputs[i].indexOf("@");
-                var dotpos = inputs[i].lastIndexOf(".");
+          
+            if (i == 2) {
+                let atpos = inputs[i].indexOf("@");
+                let dotpos = inputs[i].lastIndexOf(".");
                 if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[i].length)
                     document.getElementById('errEmail').innerHTML 
                       = "<span style='color: red'>Enter a valid email address!</span>";
                 else
                     document.getElementById(div).innerHTML = "OK!";
-            } else if (i == 5) {
-                var first = document.getElementById('password').value;
-                var second = document.getElementById('confirm').value;
+            } 
+           if (i == 5) {
+                let first = document.getElementById('password').value;
+                let second = document.getElementById('confirm').value;
                 if (second != first)
                     document.getElementById('errConfirm').innerHTML 
                       = "<span style='color: red'>Your passwords don't match!</span>";
