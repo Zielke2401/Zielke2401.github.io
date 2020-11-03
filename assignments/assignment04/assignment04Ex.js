@@ -111,9 +111,9 @@ table3B.setAttribute("width", "100%");
 
 //put the values in the row
 addrow(table3B, "Item", "Price", "Qty", "Price * Qty"); 
-addrow(table3B, "Thingamabob", "1.00", "1", p00 * p10);
-addrow(table3B, "Whachamacallit", "2.00", "2", p01 * p11);
-addrow(table3B, "Doohickey", "3.00", "3", p02 * p12); 
+addrow(table3B, "Thingamabob", "1.00", "1", P1 * Q1);
+addrow(table3B, "Whachamacallit", "2.00", "2", P2 * Q2);
+addrow(table3B, "Doohickey", "3.00", "3", P3 * Q3); 
 addrow(table3B, "Grand Total:", P1 + P2 + P3 + ".00", Q1 + Q2 + Q3, P1 * Q1 + P2 * Q2 + P3 * Q3); 
 
 function addrow(tableobj, top, col1, col2, col3, col4)
