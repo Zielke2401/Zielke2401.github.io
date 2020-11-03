@@ -147,7 +147,8 @@ function addrow(tableobj, top, col1, col2, col3, col4)
   
 }
   
-// 9. Revise a non-object-oriented HTML form. Make it so the field in focus displays *only* its own error (not the errors of all the other fields), however, if the user clicks the "validate" button, then display all errors.
+// 9. Revise a non-object-oriented HTML form. Make it so the field in focus displays *only* 
+// its own error (not the errors of all the other fields), however, if the user clicks the "validate" button, then display all errors.
 // code below is from: https://www.guru99.com/practical-code-examples-using-javascript.html 
 
     // initialize error div id array
@@ -254,6 +255,11 @@ for (i in formArray)
 {
    table5b.setAttribute("style", "border:1px solid black;") 
    table5b.setAttribute("width", "100%") 
+   appendTableRoww5(table5b, formArray[i].label, 
+                    formArray[i].inputType, 
+                    formArray[i].id, 
+                    formArray[i].onkeyup, 
+                    formArray[i].errorId);
 }
 // append to tableobj a 3-column table row 
 function appendTableRow3 (tableobj, col1, col2, col3) {
