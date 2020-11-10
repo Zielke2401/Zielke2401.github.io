@@ -78,16 +78,17 @@ function loadContent() {
       
       covidJson = this.responseText;
       covidJsObj = JSON.parse(covidJson);
-      newConfirmedOver1000 = [];
+      TotalDeaths = [];
       
 	    for (let c of covidJsObj.Countries) {
-        if (c.NewConfirmed > 10000) {
-          newConfirmedOver1000.push({ 
+        if (c.TotalDeaths > 50000) {
+          TotalDeaths.push({ 
             "Slug": c.Slug, 
-            "NewConfirmed": c.NewConfirmed, 
-            "NewDeaths": c.NewDeaths
+            "TotalConfirmed": c.TotalConfirmed, 
+            "TotalDeaths": c.TotalDeaths
           });
         }
+	let TotalDeathsOver50000 = _.orderBy(TotalDeaths, ['TotalDeaths'], ['desc']); 
       }
 
       chartData.data.datasets[0].backgroundColor 
@@ -99,12 +100,12 @@ function loadContent() {
       chartData.data.datasets[1].label  
         = 'new deaths';
       chartData.data.labels  
-        = newConfirmedOver1000.map( (x) => x.Slug );
+        = TotalDeathsOver50000.map( (x) => x.Slug );
       chartData.data.datasets[0].data  
-        = newConfirmedOver1000.map( 
+        = TotalDeathsOver50000.map( 
           (x) => x.NewConfirmed );
       chartData.data.datasets[1].data  
-        = newConfirmedOver1000.map( 
+        = TotalDeathsOver50000.map( 
           (x) => x.NewDeaths );
       chartData.options.title.text 
         = "Covid 19 Hotspots (" + 
