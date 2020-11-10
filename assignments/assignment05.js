@@ -6,7 +6,7 @@
 var URL = "https://api.covid19api.com/summary";
 var covidJson;
 var covidJsObj;
-var newConfirmedOver1000;
+var TotalDeaths;
 
 // AJAX variable
 var xhttp;
