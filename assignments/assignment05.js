@@ -6,7 +6,7 @@
 var URL = "https://api.covid19api.com/summary";
 var covidJson;
 var covidJsObj;
-var TotalDeaths;
+var newConfirmedOver1000;
 
 // AJAX variable
 var xhttp;
@@ -78,17 +78,17 @@ function loadContent() {
       
       covidJson = this.responseText;
       covidJsObj = JSON.parse(covidJson);
-      TotalDeaths = [];
+      newConfirmedOver1000 = [];
       
 	    for (let c of covidJsObj.Countries) {
-        if (c.TotalDeaths > 50000) {
-          TotalDeaths.push({ 
+        if (c.NewConfirmed > 10000) {
+          newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
-            "TotalConfirmed": c.TotalConfirmed, 
-            "TotalDeaths": c.TotalDeaths
+            "NewConfirmed": c.NewConfirmed, 
+            "NewDeaths": c.NewDeaths,
+            "Populations" : populations[c.Slug]
           });
         }
-	let TotalDeathsOver50000 = _.orderBy(TotalDeaths, ['TotalDeaths'], ['desc']); 
       }
 
       chartData.data.datasets[0].backgroundColor 
@@ -100,12 +100,12 @@ function loadContent() {
       chartData.data.datasets[1].label  
         = 'new deaths';
       chartData.data.labels  
-        = TotalDeathsOver50000.map( (x) => x.Slug );
+        = newConfirmedOver1000.map( (x) => x.Slug );
       chartData.data.datasets[0].data  
-        = TotalDeathsOver50000.map( 
+        = newConfirmedOver1000.map( 
           (x) => x.NewConfirmed );
       chartData.data.datasets[1].data  
-        = TotalDeathsOver50000.map( 
+        = newConfirmedOver1000.map( 
           (x) => x.NewDeaths );
       chartData.options.title.text 
         = "Covid 19 Hotspots (" + 
