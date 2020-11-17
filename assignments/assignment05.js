@@ -90,11 +90,11 @@ function loadContent() {
 	    
 	    
 	    //empty array of objects
-      deathsOver50000 = [];
+      newConfirmedOver1000 = [];
       
 	    for (let c of covidJsObj.Countries) {
         if (c.TotalDeaths > 50000) {
-          deathsOver50000.push({ 
+          newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
             "NewDeaths": c.NewDeaths,
@@ -105,7 +105,7 @@ function loadContent() {
           });
         }
       }
-      deathsOver50000 = _.orderBy(deathsOver50000,'TotalConfirmedPer100000','desc');
+      newConfirmedOver1000 = _.orderBy(newConfirmedOver1000,'TotalConfirmedPer100000','desc');
 		
 	    
       //set chart colors    
@@ -126,17 +126,17 @@ function loadContent() {
 	    
 	    
       chartData.data.labels  
-        = deathsOver50000.map( (x) => x.Slug );
+        = newConfirmedOver1000.map( (x) => x.Slug );
 	    
       //use correct data sets    
       chartData.data.datasets[0].data  
-        = deathsOver50000.map( 
+        = newConfirmedOver1000.map( 
           (x) => x.TotalConfirmed );
       chartData.data.datasets[1].data  
-        = deathsOver50000.map( 
+        = newConfirmedOver1000.map( 
           (x) => x.TotalDealths );	    
       chartData.data.datasets[2].data
-	= deathsOver50000.map(
+	= newConfirmedOver1000.map(
 	      (x)=>x.TotalConfirmedPer100000);
 
       chartData.options.title.text 
