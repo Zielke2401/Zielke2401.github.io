@@ -33,7 +33,7 @@ var chartData = {
       backgroundColor: "rgba(255,140,0,0.4)"
     },  {      
       label: "banana",
-      data: [2, 4, 6, 8, 10, 12, 14],
+      data: [1,2,3,4,5,6,7],
       backgroundColor: "rgba(255,140,0,0.4)"   
     }]
   },
