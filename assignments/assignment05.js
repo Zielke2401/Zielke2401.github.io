@@ -32,7 +32,7 @@ var chartData = {
       data: [2, 29, 5, 5, 2, 3, 10],
       backgroundColor: "rgba(255,140,0,0.4)"
     },  {      
-      label: "alpha",
+      label: "banana",
       data: [1,2,3,4,5,6,7],
       backgroundColor: "rgba(255,140,0,0.4)"   
     }]
@@ -94,51 +94,49 @@ function loadContent() {
       
 	    for (let c of covidJsObj.Countries) {
         if (c.TotalDeaths > 50000) {
-          newConfirmedOver1000.push({ 
+             newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
             "NewDeaths": c.NewDeaths,
-            "Populations" : populations[c.Slug],
-            "TotalConfirmed": c.TotalConfirmed,
-            "TotalDeaths":c.TotalDeaths,
-            "TotalConfirmedPer100000":100000*c.TotalConfirmed/populations[c.Slug]
+            "TotalConfirmedPer100000":100000*c.TotalConfirmed/populations[c.Slug],
+            "TotalDeaths":c.TotalDeaths,     
+            "Populations":populations[c.slug],
+            "TotalConfirmed": c.TotalConfirmed
           });
         }
       }
       newConfirmedOver1000 = _.orderBy(newConfirmedOver1000,'TotalConfirmedPer100000','desc');
 		
-	    
-      //set chart colors    
+       //set colors for graph    
       chartData.data.datasets[0].backgroundColor 
         = "rgba(100,100,100,0.4)"; // gray
       chartData.data.datasets[1].backgroundColor 
         = "rgba(255,0,0,0.4)"; // red
-      chartData.data.datasets[1].backgroundColor 
-        = "rgba(0,0,255,0.4)"; // blue    
-
-      //set bar labels
+      chartData.data.datasets[2].backgroundColor
+        = "rgba(0,0,255,.4)";
+	
+      //set labels for bars  
       chartData.data.datasets[0].label  
         = 'Total Confirmed';
       chartData.data.datasets[1].label  
         = 'Total Deaths';
-      chartData.data.datasets[2].label  
-        = 'Total Confirmed Per 100,000';
-	    
+      chartData.data.datasets[2].label
+	= 'Total Confirmed Per 100,000';
 	    
       chartData.data.labels  
         = newConfirmedOver1000.map( (x) => x.Slug );
-	    
-      //use correct data sets    
+      
+      //give the chart the correct data
       chartData.data.datasets[0].data  
         = newConfirmedOver1000.map( 
           (x) => x.TotalConfirmed );
       chartData.data.datasets[1].data  
         = newConfirmedOver1000.map( 
-          (x) => x.TotalDealths );	    
+          (x) => x.TotalDeaths );
       chartData.data.datasets[2].data
 	= newConfirmedOver1000.map(
-	      (x)=>x.TotalConfirmedPer100000);
-
+	  (x)=>x.TotalConfirmedPer100000);
+	    
       chartData.options.title.text 
         = "Covid 19 Hotspots (" + 
         dayjs().format("YYYY-MM-DD") + ")" ;
@@ -256,3 +254,4 @@ var populations = {
 'austria' : 8915382,
 'switzerland' : 8632703,
 }
+loadContent();
