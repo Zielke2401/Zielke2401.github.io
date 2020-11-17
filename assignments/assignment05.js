@@ -34,7 +34,7 @@ var chartData = {
     },  {      
       label: "banana",
       data: [2, 4, 6, 8, 10, 12, 14],
-      backgroundColor: "rgba(0,0,255,0,.4)"   
+      backgroundColor: "rgba(255,140,0,0.4)"   
     }]
   },
   options: {
