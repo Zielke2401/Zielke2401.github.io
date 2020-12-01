@@ -105,7 +105,7 @@ var loans = [{
 
         // $("#loan_year01").focus();
 
-    }); // end: function loadDoc()
+    }); // end:of original loadDoc() function
 
 
     // -------------------------------------------------------
@@ -122,7 +122,7 @@ var loans = [{
     }
 
     
-    //--------NEW THINGS--------
+    //--------NEW THINGS AND UPDATED THINGS--------
     
     //function to save input fields    
     let save = () => { //begin save method
