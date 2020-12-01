@@ -264,11 +264,13 @@ var loans = [{
 
             let interestRate = loans[0].loan_int_rate; //initialize interestrate with loan rate as value
 
+            let n = 11;// total months minus 1
+                    
             let r = interestRate / 12; //initialise the monthly rate using the yearly rate
           
             let endTotal = loanWithInterest; //initialize endprice using loanwithinterest
           
-            let pay = 12 * (endprice / ((((1 + r) ** (11 * 12)) - 1) / (r * (1 + r) ** (11 * 12)))); //calc payment
+            let pay = 12 * (endprice / ((((1 + r) ** (n * 12)) - 1) / (r * (1 + r) ** (n * 12)))); //calc payment
 
             for (let i = 0; i < 10; i++) { //loop 10 times
 
